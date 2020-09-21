@@ -21,28 +21,26 @@ from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-You can find my list of available commands with /help.
+Merhaba {}, ben {}! 
+UberCorp bünyesindeki tüm kanal ve grupları yönetmek için [yaratıcım](t.me/quoeust) 
+tarafından yazılmış telegram botuyum.
 
-[Saitama's Repo](github.com/AnimeKaizoku/SaitamaRobot) 
-See [Basic Configuration Checklist](t.me/OnePunchUpdates/29) on how to secure your group.
-The support group chat is at {}.
+Bruh moment yaşamamak için geldiğin yere geri dönebilirsin
+Çatı grup :  {}.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Merhaba ben *{}*.
 I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
 the things I can help you with.
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
+*Temel* komutlarım:
+ • /help: tüm liste.
+ • /help <mmodül adı>: modül hakkında bilgilendirme
+ • /donate: bağış hakkında bilgi.
  • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
+   • Private mesajda: sanada desteklenen tüm mesajların seçeneklerini gönderirim.
+   • Grupta: seni seçenekler için pm e yönlendiririm.
 
 {}
 And the following:
@@ -50,12 +48,9 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/a754321e04fd4c22fc976.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Burası aNaL kiTap değil, reklama karşı olup bağış dilenecek seviyeye inemedik 😳😳😳😳"""
 
 IMPORTED = {}
 MIGRATEABLE = []
